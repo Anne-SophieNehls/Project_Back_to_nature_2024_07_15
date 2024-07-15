@@ -1,6 +1,215 @@
+@font-face {
+    font-family: "Urbanist-Reg";
+    src: url("../font/Urbanist-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Urbanist-Bold";
+    src: url("../font/Urbanist-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Urbanist-Black";
+    src: url("../font/Urbanist-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Urbanist-Light";
+    src: url("../font/Urbanist-.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/********** Font allgemeine Styles *************/
+
+html{
+    font-family: "Urbanist-Reg";
+    font-size: 16pt;
+    line-height: 120%;
+}
+
+h2{
+    font-family: "Urbanist-Black";
+    font-size: 40pt;
+    line-height: 150%;
+}
+
+h3{
+    font-family: "Urbanist-Black";
+    font-size: 38pt;
+    line-height: 150%;
+}
+
+h4{
+    font-family: "Urbanist-Bold";
+    font-size: 20pt;
+    line-height: 150%;
+}
+
+li{
+    list-style: none;
+    font-size: 16pt;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+}
+
+b{
+    font-family: "Urbanist-Black";
+    text-decoration: underline;
+}
+
+/********** Button allgemein *************/
+
+button{
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
+    padding: 8px;
+    height: 50px;
+    width: 300px; 
+    font-size: 16pt;
+    font-family: "Urbanist-Bold";
+}
+
+.btn_green{
+    background-color: #A9CBA6;
+    color: white;
+    display: inline;
+
+}
+
+/********** Styles allgmein *************/
+.flex{
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    margin: 3%;
+    align-items: center;
+    
+}
+
+.textbox{
+    text-align: center;
+    margin: 50px 25%;
+}
+
+
+
+/********** Navigation *************/
+nav{
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px 15%;
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+/********** Hero *************/
+#hero{
+    background-image: url(../img/background/Ilustration_Header\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+    height: 90svh;
+}
+
+h1{
+    font-family: "Urbanist-Black";
+    font-size: 95pt;
+    line-height: 80%;
+    margin: 5% 40% 5% 20%;
+    padding-top: 16%;
+}
+
+
+
+select{
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
+    height: 50px;
+    width: 300px; 
+    font-size: 16pt;
+    font-family: "Urbanist-Bold";
+    padding: 8px;
+    text-align: center;
+}
+
+/********** Warum Camper mieten *************/
+
+.karte_argument{
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
+    padding: 20px 20px 0px 20px;
+    width: 17.5%;
+   background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.karte_argument img{
+    height: 50%;
+    object-fit: contain;
+}
+
+.karte_argument p{
+    margin: 20px 0px 0px 0px;
+}
+
+#warum_camper{
+    background-image: url(../img/background/background\ green.svg);
+    background-repeat: no-repeat;
+
+}
+
+/********** Qual der Wahl *************/
+.karte_van{
+    background-color: #F0CEA0;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
+}
+
+.Van_Bild{
+    background-color: white;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: 1px solid black;
+    box-shadow: inset -3px 0px 2px 0px rgba(0,0,0,0.50);
+
+
+}
+
+#qual_der_wahl{
+    background-image: url(../img/background/Background\ Blue.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/********** Footer *************/
+
+footer{
+    border-top: 2px solid black;
+    padding: 50px;
+    align-content: center;
+}
+
 
