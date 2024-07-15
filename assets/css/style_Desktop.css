@@ -147,7 +147,8 @@ h1{
     font-family: "Urbanist-Black";
     font-size: 95pt;
     line-height: 80%;
-    margin: 150px 400px 60px 300px;
+    width: 500px;
+    margin: 150px 40svw 60px 300px;
     padding-top: 16%;
 }
 
