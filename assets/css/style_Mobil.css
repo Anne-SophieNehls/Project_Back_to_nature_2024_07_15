@@ -2,7 +2,34 @@
 
 @media only screen and (min-width: 380px) and (max-width: 768px) {   
 
+    nav{
+        width: 90%;
+        margin: 5%;
+        padding: 10px;
+    }
 
+    #logo_Nav{
+       
+    }
+
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+      }
+
+    .nav{
+        display: none;
+
+    }
 
 
 }

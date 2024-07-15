@@ -72,7 +72,8 @@ button{
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
-    padding: 8px;
+    padding: 10px 20px;
+    margin-top: 10px;
     height: 50px;
     width: 300px; 
     font-size: 16pt;
@@ -82,7 +83,9 @@ button{
 .btn_green{
     background-color: #A9CBA6;
     color: white;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 
@@ -97,15 +100,13 @@ button{
 
 .textbox{
     text-align: center;
-    margin: 50px 25%;
+    margin: 50px 20%;
 }
 
 ul{
     margin: 15px;
     line-height: 180%;
 }
-
-
 
 /********** Navigation *************/
 nav{
@@ -129,12 +130,16 @@ nav{
     padding-left: 15px;
 }
 
+i{
+    color: #A9CBA6;
+}
+
 /********** Hero *************/
 #hero{
     background-image: url(../img/background/Ilustration_Header\ 1.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: fill;
+    background-size: contain;
     height: 90svh;
 }
 
@@ -146,9 +151,8 @@ h1{
     padding-top: 16%;
 }
 
-
-
 select{
+    appearance: none;
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
@@ -157,7 +161,25 @@ select{
     font-size: 16pt;
     font-family: "Urbanist-Bold";
     padding: 8px;
-    text-align: center;
+    text-align: center; 
+    position: relative;
+    top: 8px;
+}
+
+.select::after{
+    content: "∨";
+    position: relative;
+    right: 1rem;
+    pointer-events:stroke;
+    right: 40px;
+    
+}
+
+.select_img{
+    z-index: 20;
+    position: relative;
+    left: 50px;
+    top: 8px;
 }
 
 /********** Warum Camper mieten *************/
@@ -167,7 +189,9 @@ select{
     border-radius: 30px;
     box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
     padding: 20px 20px 0px 20px;
+    margin-bottom: 25px;
     width: 17.5%;
+    min-width: 230px;
    background-color: white;
     display: flex;
     flex-direction: column;
@@ -196,6 +220,8 @@ select{
 .karte_van{
     background-color: #F0CEA0;
     width: 30%;
+    min-width: 370px;
+    margin: 25px 0px 25px 0px;
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: inset -3px -3px 2px 0px rgba(0,0,0,0.50);
@@ -244,8 +270,7 @@ li{
 .karte_van div:last-of-type{
     display: flex;
     flex-direction: column;
-    margin: 0% 14% 5% 14%;
-    gap: 10px;
+    margin: 0% 10% 5% 10%;
 }
 
 
