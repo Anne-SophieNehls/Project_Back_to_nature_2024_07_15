@@ -1,16 +1,34 @@
 /* Mobil */
 
-@media only screen and (min-width: 380px) and (max-width: 768px) {   
-
-    nav{
-        width: 90%;
-        margin: 5%;
-        padding: 10px;
+/* @media only screen and (min-width: 380px) and (max-width: 768px) {   
+ */
+ /********* Fontstyles *******/
+    html{
+        font-family: "Urbanist-Reg";
+        font-size: 14pt;
+        line-height: 120%;
     }
 
-    #logo_Nav{
-       
+    h1{
+        font-size: 28pt;
+        margin: 10% 60% 8% 13%;
+        padding-bottom: 15px;
     }
+    
+    h2{
+        font-size: 35pt;
+        margin-top: 25%;
+    }
+    
+    h3{
+        font-size: 35pt;
+    }
+    
+    h4{
+        font-size: 20pt;
+    }
+
+/* *********** Nav **************/
 
     .burger-menu{
         display: flex;
@@ -30,6 +48,19 @@
         display: none;
 
     }
+    #hero{
+        height: 40svh;
+    }
+
+    nav{
+        padding: 10px;
+        margin: 20px;
+    }
 
 
-}
+    footer div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
